@@ -1,28 +1,90 @@
-# To-do list Mobile Application
-I developed a to-do list application using Flutter and integrated SQFLite for efficient database management. The app incorporated the Google Maps API to enable location tracking and display maps within the application. Its features included task creation, notification reminders, and location tracking with the ability to associate specific locations to tasks. Users could view their tasks on a map, ensuring better organization and productivity. I worked independently on the design and implementation of the entire app, from start to finish.
+# ✅ To-do List Mobile Application – Task Management with Location & Notifications
 
-# Video Demo To-do list Mobile Application  : 
+This is a **Flutter-based To-do List Application** designed to boost productivity through structured planning, location tracking, and smart notifications. Built entirely by me from scratch, this app leverages **SQFLite** for local data storage and **Google Maps API** for real-time location-based task association.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hubttbMuBt0/0.jpg)](https://drive.google.com/file/d/1s6V5Nzl7FXEbAWJ9MVQ39xdk62G8iuud/view?usp=sharing)
+---
 
-Proggram Exmplanation : https://drive.google.com/file/d/19ppzoYAn9_uYdgVcR7VLD1gA7secSyTn/view?usp=sharing
+## 🚀 Features
 
-| Name    | Description                                | Preview                       |
-| ------- | ------------------------------------------ | ----------------------------- |
-| Introduction Page | When users open the application for the first time, they will see the introduction page. It will ask them what time they wake up and sleep. | ![alt text](./doc/get-start.png) |
-| Wake Up Time | In this section, users can simply scroll to adjust the time to get a notification when they wake up. | ![alt text](./doc/wake-up.png) |
-| Sleep Time | Same as in Wake Up, users can simply scroll to adjust the time to get a notification when sleep time. | ![alt text](./doc/sleep.png) |
-| Access Map | After users completed the introduction page, they will go to home page and it will ask about map access to get their location. | ![alt text](./doc/map-access.png) |
-| Home Page | In the home page, they will see a timeline based on the time that they input in the introduction page. To add task simply tap the plus button on the bottom left| ![alt text](./doc/home.png) |
-| Add Task | In the add task form, user can set the title of the task, start time, end time, date etc. | ![alt text](./doc/add-task-form.png) |
-| Add location | Users can also add spesific location to the task | ![alt text](./doc/add-loc.png) |
-| Task Created | After successfully create task, user can see the heir created task on the timeline based on calendar | ![alt text](./doc/task-created.png) |
-| See Task on Map | Users can see all their tasks on the Map Page | ![alt text](./doc/see-map.png) |
-| Update Task | Csers can update their task to mark as done by simply click the task and click complete | ![alt text](./doc/update-task.png) |
-| Update Task | Users can see thier task updated and marked as completed | ![alt text](./doc/complete.png) |
-| Dark Mode | Users can change thier theme to become dark mode by simply turn on dark mode in the setting page | ![alt text](./doc/dark-mode.png) |
-| Test Notification | To test notification, i'm going to create a new task called Email and set the time 1 minute ahead of the current time which is 5.57. | ![alt text](./doc/set-time.png) |
-| Notification | When time showed at 5.57, the notification pop up on the notification bar. Users can click the notification to see the detail of the Tasj| ![alt text](./doc/notification.png) |
-| Detail Task | Users can see the detail task by clicking the notification | ![alt text](./doc/detail-task.png) |
-| Delete Task | Users can delete the task if they think the Task is completed | ![alt text](./doc/delete-task.png) |
+### 🗂️ Task Management
+- Create tasks with title, description, start/end time, and date
+- Update and delete tasks easily
+- Mark tasks as completed
+
+### 🗺️ Location Tracking
+- Integrate Google Maps
+- Attach specific locations to each task
+- View all tasks plotted on an interactive map
+
+### 🔔 Notification System
+- Set wake-up and sleep times to customize reminder windows
+- Receive timely notifications for scheduled tasks
+- Tap notifications to view task details
+
+### 🌓 Dark Mode
+- Toggle dark mode from the settings page for a comfortable viewing experience
+
+### 📆 Timeline View
+- View tasks organized by date and time
+- Visual timeline aligned with user-defined day schedule (wake/sleep)
+
+---
+
+## 📽️ Demo
+
+### 🎬 Video Demo  
+[![Watch Demo](https://img.youtube.com/vi/hubttbMuBt0/0.jpg)](https://drive.google.com/file/d/1s6V5Nzl7FXEbAWJ9MVQ39xdk62G8iuud/view?usp=sharing)
+
+### 📄 Program Explanation  
+[View PDF](https://drive.google.com/file/d/19ppzoYAn9_uYdgVcR7VLD1gA7secSyTn/view?usp=sharing)
+
+---
+
+## 📱 Screenshots & Flow
+
+| Screen | Description | Preview |
+|--------|-------------|---------|
+| **Introduction Page** | Collects user’s wake-up and sleep times on first use | ![intro](./doc/get-start.png) |
+| **Wake Up Time** | Allows scrollable input for wake-up reminders | ![wake](./doc/wake-up.png) |
+| **Sleep Time** | Same as above for sleep reminders | ![sleep](./doc/sleep.png) |
+| **Map Access** | Requests permission for location access | ![map-access](./doc/map-access.png) |
+| **Home Page** | Timeline view of the day; add tasks with ➕ button | ![home](./doc/home.png) |
+| **Add Task** | Create a new task with full detail inputs | ![add-task](./doc/add-task-form.png) |
+| **Add Location** | Assign a specific place using Google Maps | ![loc](./doc/add-loc.png) |
+| **Task Created** | Task appears on timeline | ![created](./doc/task-created.png) |
+| **Map View** | See all tasks pinned on Google Maps | ![map](./doc/see-map.png) |
+| **Update Task** | Click a task to edit or mark as done | ![update](./doc/update-task.png) |
+| **Completed Task** | Marked tasks show as completed | ![complete](./doc/complete.png) |
+| **Dark Mode** | Toggle theme in settings | ![dark](./doc/dark-mode.png) |
+| **Set Notification** | Schedule task to test notification | ![time](./doc/set-time.png) |
+| **Receive Notification** | Appears in notification bar | ![notify](./doc/notification.png) |
+| **Task Detail from Notification** | Opens full task view | ![detail](./doc/detail-task.png) |
+| **Delete Task** | Remove completed or unnecessary tasks | ![delete](./doc/delete-task.png) |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Technology            |
+|---------------|------------------------|
+| Framework     | Flutter (Dart)         |
+| Database      | SQFLite                |
+| Maps API      | Google Maps SDK        |
+| State Management | `setState` (basic state) |
+| Local Storage | Shared Preferences (for onboarding state) |
+| Notifications | Local Notifications package |
+
+---
+
+## 👨‍💻 Developer Notes
+
+I independently designed and implemented the app UI, backend logic, local storage, notification scheduler, and Google Maps integration. This project helped me strengthen my skills in **mobile development**, **state management**, and **user experience design**.
+
+---
+
+## 📬 Contact
+
+If you'd like to collaborate, give feedback, or ask about the project, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/abdulmannansaipi/).
+
+---
 
