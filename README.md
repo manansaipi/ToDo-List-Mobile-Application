@@ -36,7 +36,7 @@ This is a **Flutter-based To-do List Application** designed to boost productivit
 [![Watch Demo](https://img.youtube.com/vi/hubttbMuBt0/0.jpg)](https://drive.google.com/file/d/1s6V5Nzl7FXEbAWJ9MVQ39xdk62G8iuud/view?usp=sharing)
 
 ### 📄 Program Explanation  
-[View PDF](https://drive.google.com/file/d/19ppzoYAn9_uYdgVcR7VLD1gA7secSyTn/view?usp=sharing)
+[Video Explanation](https://drive.google.com/file/d/19ppzoYAn9_uYdgVcR7VLD1gA7secSyTn/view?usp=sharing)
 
 ---
 
